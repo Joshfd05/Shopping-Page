@@ -1,0 +1,217 @@
+/* Import font to the project */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Body styles */
+body {
+    background-image: url("../OtherImages/bg.jpg"); /* Import the background image */
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Main container styles */
+.container {
+    width: 900px;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 80px;
+    transition: transform 0.5s; /* Smooth transition */
+}
+
+
+/* SVG icon styles */
+svg {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+header .title {
+    font-size: x-large;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+header .icon-cart {
+    position: relative;
+}
+
+header .icon-cart span {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    cursor: pointer;
+}
+
+/* Product list styles */
+.listProduct .item img {
+    width: 100%;
+    filter: drop-shadow(20px 20px 20px rgb(2, 2, 118));
+}
+.listProduct {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.listProduct .item:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.listProduct .item {
+    background-color: rgb(54, 98, 180);
+    color: rgb(183, 227, 238);
+    padding: 20px;
+    border-radius: 20px;
+}
+.listProduct .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+.listProduct .item .price {
+    color: rgb(0, 0, 0);
+    letter-spacing: 7px;
+    font-size: small;
+    font-weight: 500;
+}
+.listProduct .item button {
+    background-color: rgb(13, 19, 58);
+    color: beige;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Shopping cart tab styles */
+.cartTab {
+    display: none; /* Hide by default */
+    width: 400px;
+    background-color: rgb(153, 201, 235);
+    color: white;
+    position: fixed;
+    inset: 0 0 0 auto;
+    overflow: auto;
+    /* display: grid;
+    grid-template-rows: 70px 1fr 70px; */
+}
+.cartTab .shp{
+    margin-top: 100px;
+    display: inline-block;
+}
+.cartTab::-webkit-scrollbar{
+    width: 0;
+}
+/* Show cartTab when visible class is added */
+.cartTab.visible {
+    display: block;
+}
+
+/* Adjust body for overlay effect when cart is visible */
+body .showCart .cartTab {
+    inset: 0 0 0 auto;
+}
+
+body .showCart .container {
+    transform: translateX(-250px); /* Move main content to the left */
+}
+
+/* CartTab title styles */
+.cartTab h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .total{
+    background-color: rgb(83, 130, 239);
+    font-size: larger;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 100px;
+}
+
+/* Button container styles */
+.cartTab .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 50px;
+}
+
+/* General button styles */
+.cartTab .btn button {
+    background-color: rgb(111, 156, 211);
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Checkout button styles */
+.cartTab .btn .checkout {
+    background-color: rgb(182, 204, 255);
+}
+
+/* Cart item image styles */
+.cartTab .listCart .item img {
+    width: 40px;
+    height: 60px;
+}
+
+/* Cart item container styles */
+.cartTab .listCart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+/* Cart item name and total price styles */
+.cartTab .listCart .item .name,
+.totalPrice {
+    font-size: small;
+    font-weight: 200;
+}
+
+
+/* Quantity adjustment button styles */
+.listCart .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: blue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: white;
+}
+
+/* Alternate background color for cart items */
+.listCart .item:nth-child(even) {
+    background-color: rgb(146, 198, 210);
+}
+

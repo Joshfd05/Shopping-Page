@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments Page</title>
+
+    <link rel="stylesheet" href="../CSS/CheckoutStyle.css">
+</head>
+<body>
+    
+    <div class="container"> <!--Container class contain all the chekout items-->
+
+        <div class="header">
+            <h1>Almost There!!</h1>
+            <h2>Fill in the details below to complete your purchase</h2>
+        </div>
+
+
+        <form>
+            <div class="row">
+
+                <div class="column"> <!--First column starts-->
+
+                    <h3 class="title">Billing Address</h3>
+
+                    <div class="userInput">
+                        <span>Fisrt Name</span>
+                        <input type="text" placeholder="Enter your First Name">
+                    </div>
+
+                    <div class="userInput">
+                        <span>Last Name</span>
+                        <input type="text" placeholder="Enter your Last Name">
+                    </div>
+
+                    <div class="userInput">
+                        <span>Email</span>
+                        <input type="email" placeholder="Enter your Email">
+                    </div>
+
+                    <div class="userInput">
+                        <span>Phone Number</span>
+                        <input type="tel" placeholder="Enter your Mobile Number">
+                    </div>
+
+                    <div class="userInput">
+                        <span>Address</span>
+                        <input type="text" placeholder="Enter your Home No, Street">
+                    </div>
+
+                    <div class="userInput">
+                        <span>City</span>
+                        <input type="text" placeholder="Enter your City">
+
+
+                </div> <!--First Column end-->
+
+                <div class="column">    <!--Second column starts-->
+
+                    <h3 class="title">Payment</h3>
+
+                    <div class="userInput">
+                        <span>Amount</span>
+                        <input type="text" placeholder="" id="amount" readonly>
+                    </div>
+
+                    <div class="userInput">
+                        <span>Payment Method</span>
+                        <input type="text" placeholder="We only accept cards" id="payMeth" readonly>
+                    </div>
+
+                    <div class="userInput">
+                        <span>Cards We Are Accepting</span>
+                        <img src="../ProductImages/cards_accepted.png" alt="cards">
+                    </div>
+
+                    <div class="userInput">
+                        <span>Name On Card</span>
+                        <input type="text" placeholder="Enter your Card Holder's Name">
+                    </div>
+
+                    <div class="userInput">
+                        <span>Card Number</span>
+                        <input type="text" placeholder="Enter your Card Number">
+                    </div>
+
+                    <div class="flex">
+                        <div class="userInput">
+                            <span>Expire Date</span>
+                            <input type="month">
+                        </div>
+
+                        <div class="userInput">
+                            <span>CVV</span>
+                            <input type="text" placeholder="CVV">
+                        </div>
+                    </div>
+                    <p>*To find the CVV, Look back of your Card</p>
+
+                </div>
+
+            </div> <!--Row end-->
+
+            <input type="submit" value="Pay Now" class="submit-btn">
+
+        </form>
+
+    </div>
+
+    <script src="../Javascript/Pay.js"></script>
+</body>
+</html>

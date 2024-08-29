@@ -1,0 +1,94 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../OtherImages/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: aliceblue; /* Set default text color */
+    margin: 0;
+    padding: 0;
+}
+.content{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: inline-block;
+}
+#top, #bottom {
+    background-color: rgb(188, 217, 243);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+#shp, #chk, #splsh, #cnt{
+    background-color: rgb(5, 15, 24);
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+/* Styling for self section */
+.self {
+    text-align: center;
+    margin-top: 20px; 
+    color: aliceblue;
+    line-height: 1.5; 
+}
+
+.self img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.self img:hover {
+    opacity: 0.7;
+    transform: scale(1.3);
+}
+
+/* Container styles */
+.container {
+    margin-top: 50px; 
+    margin-bottom: 20px; 
+    text-align: center;
+}
+.topic {
+    background-color: rgb(50, 151, 176);
+}
+
+/* Shop section styles */
+.shop {
+    margin-top: 20px; 
+}
+.shop, .splashScreen, .contentPage, .snapshot h2{
+    padding-bottom: 50px;
+}
+
+/* Snapshot styles */
+.snapshot{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.snapshot img {
+    display: block; /* Ensure images are displayed as blocks */
+    margin: 0 auto 20px; /* Center images horizontally and add bottom margin */
+    max-width: 60%; /* Ensure images don't exceed their container */
+    max-height: 80%;
+    padding: 40px;
+}
+
+
+

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT SANITY</title>
+
+    <!--Linking the CSS file-->
+    <link rel="stylesheet" href="../CSS/styleguide.css">
+    <link rel="stylesheet" href="../CSS/ShopStyle.css">
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="navbar">
+        <div>
+            <a class="navbar-brand" href="content.html"><img src="../OtherImages/Logo.png" alt="" width="150" height="100"></a>
+        </div>
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="content.html">Content</a>
+            </li>
+            <li class="nav-item">
+                <a href="team.html">Student Details</a>
+            </li>
+            <li class="nav-item">
+                <a href="sitemap.html">Sitemap</a>
+            </li>
+            <li class="nav-item">
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a href="shop.html">Shop Now</a>
+            </li>
+            <li class="nav-item">
+                <a href="feedback.html">Feedback</a>
+            </li>
+            <li class="nav-item">
+                <a href="profile.html">Join Us</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <div class="container">
+        <header>
+            <div class="title">PRODUCT LIST</div>
+
+                <div class="icon-cart" id="cartIcon">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                    </svg>
+                    <span id="cart-count">0</span>
+                </div>
+                
+        </header>
+
+        <div class="listProduct">   <!-- Product Items -->
+
+            <!-- Product 1 -->
+            <div class="item" data-price="2000">
+                <img src="../ProductImages/LifeStraw_Products.png" alt="Portable water Filter">
+                <h2>Portable Water Filter</h2>
+                <div class="price">Rs 2000</div>
+                <button class="addCart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="item" data-price="2500">
+                <img src="../ProductImages/Electric_Portable_Water_Filter.png" alt="Electric Portable Water Filter">
+                <h2>Electric Portable Water Filter</h2>
+                <div class="price">Rs 2500</div>
+                <button class="addCart">
+                    Add To Cart
+                </button>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="item" data-price="3000">
+                <img src="../ProductImages/Stainless_steel_Filter_Bottle.png" alt="Stainless steel Filter Bottle">
+                <h2>Stainless steel Filter Bottle</h2>
+                <div class="price">Rs 3000</div>
+                <button class="addCart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="item" data-price="1500">
+                <img src="../ProductImages/phKit.png" alt="Water Testing Kit">
+                <h2>Water Testing Kit</h2>
+                <div class="price">Rs 1500</div>
+                <button class="addCart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="item" data-price="300">
+                <img src="../ProductImages/Eco_Friendly_Soap.png" alt="Natural Soap">
+                <h2>Natural Soap</h2>
+                <div class="price">Rs 300</div>
+                <button class="addCart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="item" data-price="500">
+                <img src="../ProductImages/Biogradable_wet_tissues.png" alt="Biogradable wet tissues">
+                <h2>Biogradable wet tissues</h2>
+                <div class="price">Rs 500</div>
+                <button class="addCart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="item" data-price="200">
+                <img src="../ProductImages/Faucet_aetor.png" alt="Faucet aetor">
+                <h2>Faucet aetor</h2>
+                <div class="price">Rs 200</div>
+                <button class="addCart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="item" data-price="4000">
+                <img src="../ProductImages/Portable_WaterQuality.png" alt="Portable WaterQuality">
+                <h2>Portable WaterQuality</h2>
+                <div class="price">Rs4000</div>
+                <button class="addCart">
+                    Add To Cart
+                </button>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="item" data-price="300">
+                <img src="../ProductImages/bamboo_toothbrush.png" alt="Bamboo Toothbrush">
+                <h2>Bamboo Toothbrush</h2>
+                <div class="price">Rs 300</div>
+                <button class="addCart">
+                    Add To Cart
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="cartTab"> <!-- Shopping Cart -->
+
+        <h1 class="shp">Shopping Cart</h1>
+
+        <div class="listCart"></div> <!-- Add this div for the cart items -->
+        
+        
+        <!--Total-->
+        <br><hr>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">Rs </div>
+        </div>
+
+        
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkout" id="buy">CHECK OUT</button>
+        </div>
+
+    </div>
+
+    <script>
+    function storeTotal() {
+        const total = document.querySelector('.total-price');   // Get the total price
+        const price = parseFloat(total.textContent.replace('Rs', '').trim());   // Get the price of each item
+        localStorage.setItem('totalPrice', " Rs " + price);  // Store the price in localStorage
+    }
+    document.getElementById('buy').addEventListener('click', storeTotal);
+</script>
+
+
+    <!-- FOOTER -->
+    <section class="links">
+        <div class="links-inner">
+            <div class="top">
+                <a href="#"><img src="../OtherImages/Logo.png" alt="top" width="270" height="200"></a>
+            </div>
+            
+            <ul>
+                <li>
+                    <h3>Quick Links</h3>
+                </li>
+            
+                <li><a href="content.html">View Content</a></li>
+                <li><a href="userProfile.html">Join Now</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="Student1.html">Developer</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>More</h3>
+                </li>
+
+                <li><a href="team.html">Student Details</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+
+            <ul class="contact">
+                <li>
+                    <h3>Contact Us</h3>
+                </li>
+                <li class="answer">
+                    <div>
+                        <img width="30" height="30" src="https://img.icons8.com/ios/50/marker--v1.png" alt="marker--v1">
+                        <address>Address - 10 Trelawney Pl, Colombo 4</address>
+                        </div>
+                </li>
+                <li class="answer">
+                    <div>
+                        <img width="30" height="30" src="https://img.icons8.com/ios-filled/100/new-post.png" alt="new-post">
+                        <a href="mailto:sulaiman.20222190@iit.ac.lk">Email: info@projectinsanity.lk</a>
+                        </div>
+                </li>
+                <li class="answer">
+                    <div>
+                        <img width="30" height="30" src="https://img.icons8.com/ios-filled/100/phone.png" alt="phone">
+                        <a href="tel:+94761103336"> Phone: +94 761103336</a>
+                        </div>
+                </li>
+            </ul>
+        </div>       
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p> Copyright &copy; 2024 - projectInsanity - All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
+
+    <!--Linking the javascript file-->
+    <script src="../Javascript/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* Import font to the project */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../OtherImages/bg.jpg"); /* Import the background image */
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed;
+    opacity: 1;
+    color: rgb(224, 255, 254);
+}
+a{
+    text-decoration: none;
+}
+header {
+    font-size: larger;
+    font-style: oblique;
+    color: rgb(255, 255, 255);
+    margin-top: 130px;
+    display: inline-block;
+    text-align: center;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+.toTop{
+    background-color: aquamarine;
+    text-align: center;
+    font-size: large;
+}
+.image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+.image img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.intro, .globe, .case-studies, .solutions {
+    margin-top: 60px;
+}
+.intro .imp {
+    text-align: center;
+}
+.image img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add a shadow effect on hover */
+}
+h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+strong {
+    color: rgb(121, 222, 255);
+}
